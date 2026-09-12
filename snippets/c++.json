@@ -1,0 +1,13 @@
+{
+  "String Input Function": {
+    "prefix": "sstr",
+    "body": [
+      "void sstr(char str[], int size) {",
+      "  if (fgets(str, size, stdin) != NULL) {",
+      "    str[strcspn(str, \"\\n\")] = '\\0';",
+      "  }",
+      "}"
+    ],
+    "description": "Safe string input function using fgets"
+  }
+}
