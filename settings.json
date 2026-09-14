@@ -113,11 +113,14 @@
 			"tab_size": 4
 		},
 		"Go": {
-			"tab_size": 4,
-			// "indent_guides": {
-			// 	"enabled": false
-			// }
-		}
+			"tab_size": 4
+		},
+		"Odin": {
+			"tab_size": 4
+		},
+		"Rust": {
+			"tab_size": 4
+		},
 	},
 	"prettier": {
 		"allowed": false
@@ -285,6 +288,11 @@
 				},
 				{
 					"paths": [
+						"/home/abhinav/dev/iloveodin"
+					]
+				},
+				{
+					"paths": [
 						"/home/abhinav/dev/ilovepython"
 					]
 				},
@@ -296,16 +304,6 @@
 				{
 					"paths": [
 						"/home/abhinav/dev/my_portfolio"
-					]
-				},
-				{
-					"paths": [
-						"/home/abhinav/dev/truly-zen"
-					]
-				},
-				{
-					"paths": [
-						"/home/abhinav/dev/truly-zen-theme"
 					]
 				},
 				{
