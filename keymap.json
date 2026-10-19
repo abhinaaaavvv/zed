@@ -1,79 +1,80 @@
 [
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "j k": "vim::NormalBefore",
-      "j j": "vim::NormalBefore",
-      "k k": "vim::NormalBefore"
-    }
-  },
-  {
-    "context": "Editor && VimControl && !menu",
-    "bindings": {
-      "space e": "project_panel::ToggleFocus"
-    }
-  },
-  {
-    "context": "ProjectPanel && not_editing",
-    "bindings": {
-      "space e": "workspace::ActivateNextPane",
-      "h": "project_panel::CollapseSelectedEntry",
-      "l": "project_panel::ExpandSelectedEntry"
-    }
-  },
-  {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "alt-a": "editor::ToggleCodeActions"
-    }
-  },
-  {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "ctrl-x ctrl-l": null
-    }
-  },
-  {
-    "context": "(VimControl && !menu)",
-    "bindings": {
-      "alt-a": "editor::ToggleCodeActions"
-    }
-  },
-  {
-    "context": "(Editor && (edit_prediction && (showing_completions || in_leading_whitespace)))",
-    "bindings": {
-      "tab": "editor::AcceptEditPrediction"
-    }
-  },
-  {
-    "context": "(Editor && edit_prediction)",
-    "bindings": {
-      "tab": "editor::AcceptEditPrediction"
-    }
-  },
-  {
-    "context": "((os != macos && Editor) && (edit_prediction && (showing_completions || in_leading_whitespace)))",
-    "bindings": {
-      "tab": "editor::AcceptEditPrediction"
-    }
-  },
-  {
-    "context": "vim_mode == normal || vim_mode == visual",
-    "bindings": {
-      "s": "vim::HelixJumpToWord"
-    }
-  },
-  {
-    "context": "vim_mode == normal",
-    "bindings": {
-      "space f": "file_finder::Toggle",
-      "space w h": "workspace::ActivatePaneLeft",
-      "space w j": "workspace::ActivatePaneDown",
-      "space w k": "workspace::ActivatePaneUp",
-      "space w l": "workspace::ActivatePaneRight",
-      "space w v": "pane::SplitRight",
-      "space w s": "pane::SplitDown",
-      "space w q": "pane::CloseActiveItem"
-    }
-  }
+	{
+		"context": "Editor && vim_mode == insert",
+		"bindings": {
+			"j k": "vim::NormalBefore",
+			"k j": "vim::NormalBefore",
+			"j j": "vim::NormalBefore",
+			"k k": "vim::NormalBefore",
+		},
+	},
+	{
+		"context": "Editor && VimControl && !menu",
+		"bindings": {
+			"space e": "project_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "ProjectPanel && not_editing",
+		"bindings": {
+			"space e": "workspace::ActivateNextPane",
+			"h": "project_panel::CollapseSelectedEntry",
+			"l": "project_panel::ExpandSelectedEntry",
+		},
+	},
+	{
+		"context": "vim_mode == insert",
+		"bindings": {
+			"alt-a": "editor::ToggleCodeActions",
+		},
+	},
+	{
+		"context": "vim_mode == insert",
+		"bindings": {
+			"ctrl-x ctrl-l": null,
+		},
+	},
+	{
+		"context": "(VimControl && !menu)",
+		"bindings": {
+			"alt-a": "editor::ToggleCodeActions",
+		},
+	},
+	{
+		"context": "(Editor && (edit_prediction && (showing_completions || in_leading_whitespace)))",
+		"bindings": {
+			"tab": "editor::AcceptEditPrediction",
+		},
+	},
+	{
+		"context": "(Editor && edit_prediction)",
+		"bindings": {
+			"tab": "editor::AcceptEditPrediction",
+		},
+	},
+	{
+		"context": "((os != macos && Editor) && (edit_prediction && (showing_completions || in_leading_whitespace)))",
+		"bindings": {
+			"tab": "editor::AcceptEditPrediction",
+		},
+	},
+	{
+		"context": "vim_mode == normal || vim_mode == visual",
+		"bindings": {
+			"s": "vim::HelixJumpToWord",
+		},
+	},
+	{
+		"context": "vim_mode == normal",
+		"bindings": {
+			"space f": "file_finder::Toggle",
+			"space w h": "workspace::ActivatePaneLeft",
+			"space w j": "workspace::ActivatePaneDown",
+			"space w k": "workspace::ActivatePaneUp",
+			"space w l": "workspace::ActivatePaneRight",
+			"space w v": "pane::SplitRight",
+			"space w s": "pane::SplitDown",
+			"space w q": "pane::CloseActiveItem",
+		},
+	},
 ]
