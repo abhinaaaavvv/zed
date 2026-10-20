@@ -1,60 +1,75 @@
 [
-	{
-		"label": "Run Java",
-		"command": "java \"$ZED_FILE\"",
-		"shell": "system",
-		"use_new_terminal": false,
-		"allow_concurrent_runs": true
-	},
-	{
-		"label": "Node JS/TS",
-		"command": "node \"$ZED_FILE\"",
-		"shell": "system",
-		"use_new_terminal": false,
-		"allow_concurrent_runs": true
-	},
-	{
-		"label": "Bun JS/TS",
-		"command": "bun \"$ZED_FILE\"",
-		"shell": "system",
-		"use_new_terminal": false,
-		"allow_concurrent_runs": true
-	},
-	// {
-	//   "label": "Run C",
-	//   "command": "gcc \"$ZED_FILE\" -Wall -Wextra -o /tmp/zed_c -lm && /tmp/zed_c",
-	//   "shell": "system",
-	//   "use_new_terminal": false,
-	//   "allow_concurrent_runs": true
-	// },
-	// {
-	//   "label": "Run C++",
-	//   "command": "g++ \"$ZED_FILE\" -std=c++20 -Wall -Wextra -o /tmp/zed_cpp && /tmp/zed_cpp",
-	//   "shell": "system",
-	//   "use_new_terminal": false,
-	//   "allow_concurrent_runs": true
-	// },
-	// {
-	//   "label": "Run Go",
-	//   "command": "go run \"$ZED_FILE\"",
-	//   "shell": "system",
-	//   "use_new_terminal": false,
-	//   "allow_concurrent_runs": true
-	// },
-	// {
-	//   "label": "Run Rust",
-	//   "command": "rustc \"$ZED_FILE\" -o /tmp/zed_rust && /tmp/zed_rust",
-	//   "shell": "system",
-	//   "use_new_terminal": false,
-	//   "allow_concurrent_runs": true
-	// },
-	{
-		"label": "Go: Add JSON Tags",
-		"command": "go-add-tags",
-		"args": [
-			"$ZED_FILE",
-			"$ZED_ROW",
-			"$ZED_COLUMN"
-		]
-	}
+  {
+    "label": "Run Java",
+    "command": "java \"$ZED_FILE\"",
+    "shell": "system",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+  },
+
+  {
+    "label": "Node JS/TS",
+    "command": "node \"$ZED_FILE\"",
+    "shell": "system",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+  },
+
+  // {
+  //   "label": "Bun JS/TS",
+  //   "command": "bun \"$ZED_FILE\"",
+  //   "shell": "system",
+  //   "use_new_terminal": false,
+  //   "allow_concurrent_runs": true,
+  // },
+  //
+  // {
+  //   "label": "Run C",
+  //   "command": "gcc \"$ZED_FILE\" -Wall -Wextra -o /tmp/zed_c -lm && /tmp/zed_c",
+  //   "shell": "system",
+  //   "use_new_terminal": false,
+  //   "allow_concurrent_runs": true
+  // },
+  //
+  // {
+  //   "label": "Run C++",
+  //   "command": "g++ \"$ZED_FILE\" -std=c++20 -Wall -Wextra -o /tmp/zed_cpp && /tmp/zed_cpp",
+  //   "shell": "system",
+  //   "use_new_terminal": false,
+  //   "allow_concurrent_runs": true
+  // },
+  //
+  // {
+  //   "label": "Run Go",
+  //   "command": "go run \"$ZED_FILE\"",
+  //   "shell": "system",
+  //   "use_new_terminal": false,
+  //   "allow_concurrent_runs": true
+  // },
+  //
+  // {
+  //   "label": "Run Rust",
+  //   "command": "rustc \"$ZED_FILE\" -o /tmp/zed_rust && /tmp/zed_rust",
+  //   "shell": "system",
+  //   "use_new_terminal": false,
+  //   "allow_concurrent_runs": true
+  // },
+
+  {
+    "label": "Go: Add JSON Tags",
+    "command": "pwsh.exe",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "C:\\Users\\abhin\\.config\\zed\\go-add-tags.ps1",
+      "$ZED_FILE",
+      "$ZED_ROW",
+      "$ZED_COLUMN",
+    ],
+    "use_new_terminal": false,
+    "hide": "always",
+    "reveal": "never",
+  },
 ]
