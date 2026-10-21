@@ -11,7 +11,6 @@
   },
   "accessible_mode": false,
   "format_on_save": "on",
-  "restore_on_startup": "launchpad",
   "auto_signature_help": false,
   "autosave": "on_focus_change",
   "window_title_format": "${projectName}${separator}${fileName}",
@@ -80,7 +79,7 @@
     "indent_size": 15.0,
     "default_width": 210.0,
     "indent_guides": {
-      "show": "never"
+      "show": "never",
     },
     "dock": "left",
   },
@@ -342,7 +341,7 @@
     "bold_folder_labels": false,
     "diagnostic_badges": true,
     "indent_guides": {
-      "show": "never"
+      "show": "never",
     },
     "file_icons": true,
     "button": true,
