@@ -400,7 +400,7 @@
         "background.appearance": "opaque",
         "panel.overlay_background": "#000000FF",
         "panel.overlay_hover": "#000000FF",
-        "minimap.thumb.background": "#00000000",
+        "minimap.thumb.background": "#3D3D3D33",
         "minimap.thumb.hover_background": "#3D3D3D33",
         "minimap.thumb.border": "#00000000",
         "version_control.renamed": "#a3a3a3ff",

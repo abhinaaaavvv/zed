@@ -1,20 +1,22 @@
 {
+  "restore_on_startup": "launchpad",
+  "cursor_blink": false,
+  "autosave": "on_focus_change",
+  "ui_font_size": 13.0,
+  "format_on_save": "on",
+  "close_panel_on_toggle": false,
+  "focus_follows_mouse": {},
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_line_height": {
     "custom": 2.0,
   },
   "code_lens": "off",
   "vim_mode": true,
-  "cursor_blink": false,
   "cursor_animation": {
     "enabled": true,
   },
-  "accessible_mode": false,
-  "format_on_save": "on",
   "auto_signature_help": false,
-  "autosave": "on_focus_change",
   "window_title_format": "${projectName}${separator}${fileName}",
-  "ui_font_size": 13.0,
   "markdown_preview": {
     "font_size": 12.0,
   },
@@ -29,7 +31,8 @@
   "autoscroll_on_clicks": true,
   "show_whitespaces": "selection",
   "status_bar": {
-    "line_endings_button": false,
+    "show_active_file": false,
+    "line_endings_button": true,
     "active_encoding_button": "enabled",
     "active_language_button": true,
     "cursor_position_button": true,
@@ -60,7 +63,6 @@
   "indent_guides": {
     "line_width": 1,
     "coloring": "fixed",
-    "enabled": true,
     "background_coloring": "disabled",
   },
   "go_to_definition_scroll_strategy": "center",
@@ -76,12 +78,12 @@
     },
   },
   "outline_panel": {
+    "file_icons": true,
+    "dock": "left",
     "indent_size": 15.0,
-    "default_width": 210.0,
     "indent_guides": {
       "show": "never",
     },
-    "dock": "left",
   },
   "restore_on_file_reopen": true,
   "search": {
@@ -131,7 +133,7 @@
       "tab_size": 2,
     },
     "Rust": {
-      "tab_size": 2,
+      "tab_size": 4,
     },
   },
   "prettier": {},
@@ -144,9 +146,9 @@
     "cv14": true, //$
     "cv17": true, //f
 
-    //     //geist mono
-    //     "ss11": true,
-    //
+    //geist mono
+    "ss11": true,
+
     //     //monaspace neon
     //     "calt": true,
     //     "liga": true,
@@ -204,13 +206,14 @@
   "zoomed_padding": true,
   "active_pane_modifiers": {},
   "terminal": {
+    "default_height": 300.0,
     "cursor_shape": "bar",
     "working_directory": null,
     "font_family": "JetBrainsMono Nerd Font",
     "default_width": 450.0,
     "flexible": false,
     "show_count_badge": false,
-    "dock": "right",
+    "dock": "bottom",
     "minimum_contrast": 45.0,
     "font_size": 12.0,
     "shell": "system",
@@ -323,13 +326,15 @@
     },
   ],
   "git_panel": {
-    "fallback_branch_name": "main",
     "default_width": 300.0,
+    "fallback_branch_name": "main",
     "dock": "left",
     "tree_view": true,
     "collapse_untracked_diff": false,
   },
   "project_panel": {
+    "hide_root": true,
+    "default_width": 210.0,
     "indent_size": 15.0,
     "entry_spacing": "comfortable",
     "folder_indicator": "chevron",
@@ -337,7 +342,6 @@
     "auto_fold_dirs": true,
     "git_status_indicator": true,
     "scrollbar": {},
-    "default_width": 210.0,
     "bold_folder_labels": false,
     "diagnostic_badges": true,
     "indent_guides": {
@@ -346,7 +350,6 @@
     "file_icons": true,
     "button": true,
     "hide_hidden": false,
-    "hide_root": true,
     "hide_gitignore": false,
   },
   "centered_layout": {
@@ -354,8 +357,6 @@
     "left_padding": 0.2,
   },
   "preview_tabs": {
-    "enable_keep_preview_on_code_navigation": true,
-    "enable_preview_multibuffer_from_code_navigation": true,
     "enable_preview_from_file_finder": true,
   },
   "tabs": {
@@ -364,11 +365,13 @@
     "git_status": true,
   },
   "tab_bar": {
-    "show": true,
+    "show_nav_history_buttons": false,
     "show_pinned_tabs_in_separate_row": false,
     "show_tab_bar_buttons": true,
   },
   "title_bar": {
+    "open_menus_on_hover": true,
+    "show_user_menu": true,
     "show_branch_status_icon": true,
     "show_onboarding_banner": true,
     "show_menus": false,
@@ -378,8 +381,9 @@
   "soft_wrap": "editor_width",
   "sticky_scroll": {},
   "minimap": {
-    "display_in": "all_editors",
     "show": "always",
+    "current_line_highlight": "all",
+    "thumb": "always",
     "max_width_columns": 80,
   },
 }
