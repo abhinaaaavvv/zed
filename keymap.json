@@ -3,9 +3,7 @@
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore",
-      "k j": "vim::NormalBefore",
       "j j": "vim::NormalBefore",
-      "k k": "vim::NormalBefore",
     },
   },
   {
