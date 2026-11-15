@@ -7,78 +7,48 @@
     },
   },
   {
-    "context": "Editor && VimControl && !menu",
-    "bindings": {
-      "space e": "project_panel::ToggleFocus",
-    },
-  },
-  {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "space e": "workspace::ActivateNextPane",
-      "h": "project_panel::CollapseSelectedEntry",
-      "l": "project_panel::ExpandSelectedEntry",
+      "l": "project_panel::CollapseSelectedEntry",
+      "h": "project_panel::ExpandSelectedEntry",
     },
   },
   {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "alt-a": "editor::ToggleCodeActions",
-    },
-  },
-  {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "ctrl-x ctrl-l": null,
-    },
-  },
-  {
-    "context": "(VimControl && !menu)",
-    "bindings": {
-      "alt-a": "editor::ToggleCodeActions",
-    },
-  },
-  {
-    "context": "(Editor && (edit_prediction && (showing_completions || in_leading_whitespace)))",
-    "bindings": {
-      "tab": "editor::AcceptEditPrediction",
-    },
+    "context": "(vim_mode == insert || (VimControl && !menu))",
+    "bindings": { "alt-a": "editor::ToggleCodeActions" },
   },
   {
     "context": "(Editor && edit_prediction)",
-    "bindings": {
-      "tab": "editor::AcceptEditPrediction",
-    },
-  },
-  {
-    "context": "((os != macos && Editor) && (edit_prediction && (showing_completions || in_leading_whitespace)))",
-    "bindings": {
-      "tab": "editor::AcceptEditPrediction",
-    },
+    "bindings": { "tab": "editor::AcceptEditPrediction" },
   },
   {
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "s": "vim::HelixJumpToWord",
+      "g w": "vim::HelixJumpToWord",
+      "space w": "pane::CloseActiveItem",
+      "space r": "projects::OpenRecent",
     },
   },
-  // {
-  //   "context": "vim_mode == normal",
-  //   "bindings": {
-  //     "space f": "file_finder::Toggle",
-  //     "space w h": "workspace::ActivatePaneLeft",
-  //     "space w j": "workspace::ActivatePaneDown",
-  //     "space w k": "workspace::ActivatePaneUp",
-  //     "space w l": "workspace::ActivatePaneRight",
-  //     "space w v": "pane::SplitRight",
-  //     "space w s": "pane::SplitDown",
-  //     "space w q": "pane::CloseActiveItem",
-  //   },
-  // },
   {
-    "context": "vim_mode == visual",
+    "context": "Workspace",
     "bindings": {
-      "shift-s": ["vim::PushAddSurrounds", {}],
+      "alt-h": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" },
+      ],
+      "alt-l": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" },
+      ],
+      "alt-k": ["workspace::MoveItemToPaneInDirection", { "direction": "up" }],
+      "alt-j": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" },
+      ],
     },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {},
   },
 ]
