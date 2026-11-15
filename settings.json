@@ -1,10 +1,9 @@
 {
+  "close_panel_on_toggle": true,
   "accessible_mode": true,
   "ui_font_size": 12.0,
-  "vertical_scroll_margin": 8.0,
+  "vertical_scroll_margin": 5.0,
   "vim_mode": true,
-  "cursor_blink": false,
-  "soft_wrap": "editor_width",
   "buffer_line_height": {
     "custom": 2.0,
   },
@@ -144,7 +143,6 @@
     "salt": true, //style alt
   },
   "toolbar": {
-    "breadcrumbs": false,
     "quick_actions": false,
     "agent_review": true,
     "selections_menu": true,
@@ -328,7 +326,7 @@
     
   },
   "minimap": {
-    "show": "auto",
     "display_in": "all_editors",
+    "show": "auto",
   },
 }
