@@ -48,7 +48,9 @@
     },
   },
   {
-    "context": "Workspace",
-    "bindings": {},
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem",
+    },
   },
 ]

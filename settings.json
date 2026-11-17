@@ -1,4 +1,5 @@
 {
+  "cursor_blink": false,
   "close_panel_on_toggle": true,
   "accessible_mode": true,
   "ui_font_size": 12.0,
@@ -284,8 +285,8 @@
     "collapse_untracked_diff": false,
   },
   "project_panel": {
-    "default_width": 200.0,
     "indent_size": 15.0,
+    "default_width": 200.0,
     "git_status_indicator": false,
     "hide_root": false,
     "entry_spacing": "comfortable",
