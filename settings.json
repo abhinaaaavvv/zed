@@ -1,6 +1,5 @@
 {
   "cursor_blink": false,
-  "close_panel_on_toggle": true,
   "accessible_mode": true,
   "ui_font_size": 12.0,
   "vertical_scroll_margin": 5.0,
@@ -75,8 +74,8 @@
   "current_line_highlight": "all",
   "cli_default_open_behavior": "existing_window",
   "collaboration_panel": {
-    "default_width": 300.0,
     "dock": "left",
+    "default_width": 300.0,
   },
   "agent_servers": {
     "opencode": {
@@ -84,12 +83,11 @@
     },
   },
   "outline_panel": {
+    "dock": "left",
     "default_width": 300.0,
     "file_icons": true,
-    "dock": "left",
-    "indent_size": 15.0,
     "indent_guides": {
-      "show": "never",
+      "show": "never"
     },
   },
   "restore_on_file_reopen": true,
@@ -285,12 +283,13 @@
     "collapse_untracked_diff": false,
   },
   "project_panel": {
+    "git_status_indicator": false,
+    "dock": "left",
+    "git_status": true,
     "indent_size": 15.0,
     "default_width": 200.0,
-    "git_status_indicator": false,
     "hide_root": false,
     "entry_spacing": "comfortable",
-    "dock": "left",
     "scrollbar": {},
     "diagnostic_badges": true,
     "indent_guides": {
@@ -316,7 +315,7 @@
     "show_tab_bar_buttons": true
   },
   "title_bar": {
-    "show_branch_status_icon": true,
+    "show_branch_status_icon": false,
     "show_user_menu": true,
     "show_onboarding_banner": true,
     "show_menus": false,
